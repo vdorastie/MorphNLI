@@ -1,0 +1,1220 @@
+[
+    {
+        "id": "1",
+        "label": "neutral",
+        "dataset": "sick",
+        "Sentence 1": "A group of kids is playing in a yard and an old man is standing in the background.",
+        "Sentence 2": "A group of boys in a yard is playing and a man is standing in the background.",
+        "Interpolation_replace": [
+            "A group of boys is playing in a yard and an old man is standing in the background.",
+			"A group of boys in a yard is playing and an old man is standing in the background."
+        ],
+		"Interpolation_remove": [
+            "A group of boys in a yard is playing and a man is standing in the background."
+        ],
+		"Interpolation_insert": [
+		
+        ],
+        "Changes_replace": [
+            "(replace, kids, boys)",
+            "(replace, is playing in a yard, in a yard is playing)"
+        ],
+		"Changes_remove": [
+            "(remove, old)"
+        ],
+		"Changes_insert": [
+            
+        ],
+		
+		"Labels": ["neutral", "entailment", "entailment"]
+    },
+
+    {
+        "id": "3",
+        "label": "entailment",
+        "dataset": "sick",
+        "Sentence 1": "The young boys are playing outdoors and the man is smiling nearby.",
+        "Sentence 2": "The kids are playing outdoors near a man with a smile.",
+		"Interpolation_replace": [
+            "The kids are playing outdoors and the man is smiling nearby.",
+            "The kids are playing outdoors near a man who is smiling nearby.",
+			"The kids are playing outdoors near a man with a smile."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+            "(replace, young boys, kids)",
+            "(replace, and the man, near a man who)",
+            "(replace, who is smiling nearby, with a smile)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+    },
+    
+    {
+        "id": "42",
+        "label": "contradiction",
+        "dataset": "sick",
+        "Sentence 1": "Two people are kickboxing and spectators are not watching.",
+        "Sentence 2": "Two people are kickboxing and spectators are watching.",
+        "Interpolation": [
+        ],
+		"Interpolation_replace": [
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+			"Two people are kickboxing and spectators are watching."
+        ],
+        "Changes": [
+        ],
+		"Changes_replace": [
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+            "(insert, not)"
+        ],
+		
+		"Labels": ["contradiction"]
+    },
+
+    {
+        "id": "164",
+        "label": "entailment",
+        "dataset": "sick",
+        "Sentence 1": "People are walking outside the building that has several murals on it.",
+        "Sentence 2": "Several people are in front of a colorful building.",
+		"Interpolation_replace": [
+            "People are in front of the building that has several murals on it.",
+			"People are in front of a colorful building."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+			"Several people are in front of a colorful building."
+        ],
+		"Changes_replace": [
+            "(replace, walking outside, in front of)",
+            "(replace, the building that has several murals on it, a colorful building)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+            "(insert, several)"
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+    },
+    
+    {
+        "id": "4",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "Children smiling and waving at camera.",
+        "Sentence 2": "There are children present.",
+		"Interpolation_replace": [
+            "Children present."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+			"There are children present."
+        ],
+		"Changes_replace": [
+			"(replace, smiling and waving at camera, present)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+			"(insert, There are)"
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+    },
+    
+    {
+        "id": "8",
+        "label":"contradiction",
+        "dataset":"snli",
+        "Sentence 1": "A young barefoot girl wearing a helmet walks down a mossy covered fallen down tree.",
+        "Sentence 2": "The child wearing sneakers skips down a forest path.",
+        "Interpolation": [
+            "A young barefoot girl wearing a helmet skips down a forest path.",
+            "The barefoot child skips down a forest path."
+        ],
+		"Interpolation_replace": [
+			"A young barefoot girl wearing a helmet skips down a forest path.",
+			"The barefoot child wearing a helmet skips down a forest path.",
+			"The child wearing sneakers wearing a helmet skips down a forest path."
+        ],
+		"Interpolation_remove": [
+			"The child wearing sneakers skips down a forest path."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+            "(replace, walks down a mossy covered fallen down tree, skips down a forest path)",
+            "(replace, a young girl, the child)",
+            "(replace, barefoot, wearing sneakers)"
+        ],
+		"Changes_remove": [
+            "(remove, wearing a helmet)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "contradiction", "entailment"]
+    },
+    
+    {
+        "id": "0",
+        "label": "neutral",
+        "dataset": "mnli",
+        "Sentence 1": "Fun for adults and children.",
+        "Sentence 2": "Fun for only children.",
+        "Interpolation_replace": [
+			"Fun for only children."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+        "Changes_replace": [
+            "(replace, adults and children, only children)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["neutral"]
+    },
+    
+    {
+        "id": "96",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "A woman is walking across the street eating a banana, while a man is following with his briefcase.",
+        "Sentence 2": "A person eating.",
+		"Interpolation_replace": [
+            "A person is walking across the street eating a banana, while a man is following with his briefcase."
+        ],
+		"Interpolation_remove": [
+            "A person is walking across the street eating a banana.", 
+            "A person is eating a banana.",
+			"A person eating."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+            "(replace, woman, person)"
+        ],
+		"Changes_remove": [
+            "(remove, while a man is following with his briefcase)",
+            "(remove, walking across the street)",
+            "(remove, a banana)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "entailment"]
+        
+    },
+
+    {
+        "id": "0",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "A man with a white beard speaks into a microphone wearing a long-sleeved gray button down shirt.",
+        "Sentence 2": "A man with a white beard is sitting quietly on a couch.",
+		"Interpolation_replace": [
+            "A man with a white beard is sitting quietly wearing a long-sleeved gray button down shirt."
+        ],
+		"Interpolation_remove": [
+            "A man with a white beard is sitting quietly."
+        ],
+		"Interpolation_insert": [ 
+			"A man with a white beard is sitting quietly on a couch."
+        ],
+		"Changes_replace": [
+            "(replace, speaks into a microphone, is sitting quietly)"
+        ],
+		"Changes_remove": [
+            "(remove, wearing a long-sleeved gray button down shirt)"
+        ],
+		"Changes_insert": [
+			"(insert, on a couch)"
+        ],
+		
+		"Labels": ["entailment", "contradiction", "entailment", "neutral"]
+        
+    },
+
+    {
+        "id": "1530",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Outside by the trees, a woman wearing jeans and red jacket throws something for a German shepherd to chase.",
+        "Sentence 2": "A woman climbing a tree.",
+		"Interpolation_replace": [
+            "Outside by the trees, a woman wearing jeans and red jacket climbing a tree."
+        ],
+		"Interpolation_remove": [
+			"A woman wearing jeans and red jacket climbing a tree.",
+			"A woman climbing a tree."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+            "(replace, throws something for a German shepherd to chase, climbing a tree)"
+        ],
+		"Changes_remove": [
+            "(remove, outside by the trees)",
+            "(remove, wearing jeans and red jacket)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["contradiction", "entailment", "entailment"]
+    },
+
+    {
+        "id": "189422",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "A man sits atop a metal beam, bracing himself against any potential dangers." ,
+        "Sentence 2": "The lighting strikes as the man is on the beam.",
+		"Interpolation_replace": [
+            "A man is on a metal beam, bracing himself against any potential dangers.", 
+            "A man is on the beam, bracing himself against any potential dangers."
+        ],
+		"Interpolation_remove": [
+            "A man is on the beam."
+        ],
+		"Interpolation_insert": [
+			"The lighting strikes as the man is on the beam."
+        ],
+		"Changes_replace": [
+            "(replace, sits atop, is on)",
+            "(replace, a metal beam, the beam)"
+        ],
+		"Changes_remove": [
+            "(remove, bracing himself against any potential dangers)"
+        ],
+		"Changes_insert": [
+            "(insert, The lighting strikes as)"
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "neutral"]
+        
+    },
+
+    {
+        "id": "39816",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "A man is making a 'rock' gesture while standing on a stool in a crowded bar.",
+        "Sentence 2": "The man is inside a bar.",
+		"Interpolation_replace": [
+            "A man is making a 'rock' gesture while he is innside a crowded bar."
+        ],
+		"Interpolation_remove": [
+            "A man is innside a crowded bar.",
+			"The man is inside a bar."
+        ],
+		"Interpolation_insert": [
+			
+        ],
+		"Changes_replace": [
+            "(replace, stands on a stool, he is inside)"
+        ],
+		"Changes_remove": [
+            "(remove, is making a 'rock' gesture)",
+            "(remove, crowded)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "entailment"]
+        
+    }, 
+	
+	{
+        "id": "216051",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Two women laugh and share conversation while each of them holds a can of refreshing Pabst Blue Ribbon Beer.",
+        "Sentence 2": "Two men have a conversation while having a beer.",
+		"Interpolation_replace": [
+			"Two women laugh and share conversation while each of them holds a can of beer.",
+			"Two women laugh and share conversation while having beer.",
+			"Two women have a conversation while having beer.",
+			"Two men have a conversation while having a beer."
+			
+        ],
+		"Interpolation_remove": [
+			
+        ],
+		"Interpolation_insert": [
+			
+        ],
+		"Changes_replace": [
+            "(replace, refreshing Pabst Blue Ribbon Beer, beeer)",
+            "(replace, each of them holds a can of beer, having beer)",
+            "(replace, laugh and share, have)",
+            "(replace, women, men)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "contradiction"]
+
+        
+    }, 
+	
+	{
+        "id": "127625",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Students sitting in a lecture hall listening to a lecture.",
+        "Sentence 2": "Students are at a college football game cheering on their team.",
+		"Interpolation_replace": [
+            "Students are in a lecture hall listening to a lecture.", 
+            "Students are at a collage football game listening to a lecture."
+			
+        ],
+		"Interpolation_remove": [
+            "Students are at a collage football game."
+        ],
+		"Interpolation_insert": [
+            "Students are at a college football game cheering on their team."
+        ],
+		"Changes_replace": [
+            "(replace, sitting, are)",
+            "(replace, in a lecture hall, at a collage football game)"
+        ],
+		"Changes_remove": [
+            "(remove, listening to a lecture)"
+        ],
+		"Changes_insert": [
+			"(insert, cheering on their team)"
+        ],
+		
+		"Labels": ["entailment", "entailment", "contradiction", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "71906",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "People watching two women wearing red and black dancing at a tavern.",
+        "Sentence 2": "People watch two belly dancers in black and red in a tavern.",
+		"Interpolation_replace": [
+			"People watch two women wearing red and black dancing at a tavern.",
+			"People watch two women in black and red dancing at a tavern.",
+			"People watch two belly dancers in black and red in a tavern."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, watching, watch)",
+			"(replace, wearing red and black, in black and red)",
+			"(replace, women dancing, two belly dancers)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "346305",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "Two men wearing UFC gear, fighting in a ring.",
+        "Sentence 2": "Two UFC fighters fighting.",
+		"Interpolation_replace": [
+			"Two UFC fighters, fighting in a ring."
+        ],
+		"Interpolation_remove": [
+			"Two UFC fighters fighting."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, men wearing UFC gear, UFC fighters)"
+        ],
+		"Changes_remove": [
+			"(remove, in a ring)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["neutral", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "341720",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "Two construction men walk in front of a big wall with a mannequin with a construction shirt near two boots.",
+        "Sentence 2": "Two construction men walk.",
+		"Interpolation_replace": [
+        ],
+		"Interpolation_remove": [
+			"Two construction men walk in front of a big wall with a mannequin.",
+			"Two construction men walk in front of a big wall.",
+			"Two construction men walk."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+        ],
+		"Changes_remove": [
+			"(remove, with a construction shirt near two boots)",
+			"(remove, with a mannequin)",
+			"(remove, in front of a big wall)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "246639",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "A man and a woman sitting at a table gambling.",
+        "Sentence 2": "The couple is betting something.",
+		"Interpolation_replace": [
+			"The couple sitting at a table gambling.",
+			"The couple sitting at a table is betting something."
+        ],
+		"Interpolation_remove": [
+			"The couple is betting something."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, A man and a woman, The couple)",
+			"(replace, gambling, is betting something)"
+        ],
+		"Changes_remove": [
+			"(remove, sitting at a table)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "508406",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Two children at a beach in front of a deep hole.",
+        "Sentence 2": "Two children are riding bike.",
+		"Interpolation_replace": [
+			"Two children at a beach are riding bike."
+        ],
+		"Interpolation_remove": [
+			"Two children are riding bike."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, in front of a deep hole, are riding bike)"
+        ],
+		"Changes_remove": [
+			"(remove, at a beach)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["contradiction", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "225704",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "A man leans against a rock pillar with his back to an ongoing parade decorated with white and pink balloon arch.",
+        "Sentence 2": "The parade passes by a man.",
+		"Interpolation_replace": [
+			"An ongoing parade passes by a man that leans against a rock pillar decorated with white and pink balloon arch.",
+			"The parade passes by a man that leans against a rock pillar decorated with white and pink balloon arch."
+        ],
+		"Interpolation_remove": [
+			"The parade passes by a man that leans against a rock pillar.",
+			"The parade passes by a man."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, with his back to an ongoing parade, An ongoing parade passes bye)",
+			"(replace, an ongoing, The)"
+        ],
+		"Changes_remove": [
+			"(remove, decorated with white and pink balloon arch)",
+			"(remove, that leans against a rock pillar)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "403803",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Three members of a band performing on stage.",
+        "Sentence 2": "A band is going to dig a tunnel.",
+		"Interpolation_replace": [
+			"A band is performing on stage.",
+			"A band is going to dig a tunnel."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, Three members of a band performing, A band is performing)",
+			"(replace, is performing on stage, is going to dig a tunnel)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "contradiction"]
+
+        
+    },
+	
+	{
+        "id": "351647",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "The Sooners quarterback is waiting for the snap from his center.",
+        "Sentence 2": "The man is on a football field.",
+		"Interpolation_replace": [
+			"The Sooners quarterback is on a football field.",
+			"The man is on a football field."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, is waiting for the snap from his center, is on a football field)",
+			"(replace, The Sooners quarterback, The man)"
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "501491",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "A cyclist rides down the road closely followed by a car.",
+        "Sentence 2": "The car is trying to drive around the biker.",
+		"Interpolation_replace": [
+			"The car closely follows a cyclist down the road.",
+			"The car closely follows the biker down the road.",
+			"The car is trying to drive around the biker down the road."
+        ],
+		"Interpolation_remove": [
+			"The car is trying to drive around the biker."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, A cyclist rides, The car closely follows)",
+			"(replace, a cyclist, the biker)",
+			"(replace, closely follows, is trying to drive around)"
+        ],
+		"Changes_remove": [
+			"(remove, down the road)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "neutral", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "75433",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "Three girls pose for a picture and one of the girls kisses the others cheek.",
+        "Sentence 2": "Three girls pose for a picture at a state fair.",
+		"Interpolation_replace": [
+        ],
+		"Interpolation_remove": [
+			"Three girls pose for a picture."
+        ],
+		"Interpolation_insert": [
+			"Three girls pose for a picture at a state fair."
+        ],
+		"Changes_replace": [
+        ],
+		"Changes_remove": [
+			"(remove, and one of the girls kisses the others cheek)"
+        ],
+		"Changes_insert": [
+			"(insert, at a state fair)"
+        ],
+		
+		"Labels": ["entailment", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "324919",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "Three women stand in a body of water on a warm day.",
+        "Sentence 2": "Three woman are cooling off in the water.",
+		"Interpolation_replace": [
+			"Three women stand in the water on a warm day.",
+			"Three women are cooling off in the water on a warm day."
+        ],
+		"Interpolation_remove": [
+			"Three women are cooling off in the water."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, in a body of water, in the water)",
+			"(replace, stand, are cooling off)"
+        ],
+		"Changes_remove": [
+			"(remove, on a warm day)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "neutral", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "396735",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "A little girl with a pink headband is riding a horse past a fence.",
+        "Sentence 2": "The girl is riding horseback by the fence on her birthday.",
+		"Interpolation_replace": [
+			"A little girl with a pink headband is riding horseback past a fence.",
+			"A little girl with a pink headband is riding horseback by the fence.",
+			"The girl with a pink headband is riding horseback by the fence."
+        ],
+		"Interpolation_remove": [
+			"The girl is riding horseback by the fence on her birthday."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, a horse, horseback)",
+			"(replace, past a fence, by the fence)",
+			"(replace, A little girl, The girl)",
+			"(replace, stand, are cooling off)"
+        ],
+		"Changes_remove": [
+			"(remove, with a pink headband)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "376750",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "A lady in blue, taking a close look of the surroundings by looking in the standing camera at park.",
+        "Sentence 2": "The woman is waiting for her target to come into the view of the park's mounted camera.",
+		"Interpolation_replace": [
+			"A lady in blue, taking a close look of the surroundings by looking in the park's mounted camera.",
+			"The woman taking a close look of the surroundings by looking in the park's mounted camera.",
+			"The woman is waiting for her target to come into the view of the park's mounted camera."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, the standing camera at park, the park's mounted camera)",
+			"(replace, A lady in blue, The woman)",
+			"(replace, taking a close look of the surroundings by looking, is waiting for her target to come into the view of)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "37746",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Two people in lavish costumes standing on the street.",
+        "Sentence 2": "The couple was on the bed.",
+		"Interpolation_replace": [
+			"Two people in lavish costumes standing on the bed.",
+			"The couple in lavish costumes standing on the bed.",
+			"The couple in lavish costumes was on the bed."
+        ],
+		"Interpolation_remove": [
+			"The couple was on the bed."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, on the street, on the bed)",
+			"(replace, Two people, The couple)",
+			"(replace, standing, was)"
+
+        ],
+		"Changes_remove": [
+			"(remove, in lavish costumes)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["contradiction", "entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "309595",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "The two girls are playing on a yellow and red jungle gym.",
+        "Sentence 2": "There are girls fighting in a bathroom.",
+		"Interpolation_replace": [
+			"There are girls playing on a yellow and red jungle gym.",
+			"There are girls playing in a bathroom.",
+			"There are girls fighting in a bathroom."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, The two girls are playing, There are girls playing)",
+			"(replace, on a yellow and red jungle gym, in a bathroom)",
+			"(replace, playing, fighting)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "contradiction", "contradiction"]
+
+        
+    },
+	
+	{
+        "id": "401617",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "When cars are all self driving, or we move away from commuting too much as we do, these will be seen only in museums.",
+        "Sentence 2": "Cars on a road.",
+		"Interpolation_replace": [
+			"Cars on a road."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, When cars are all self driving, or we move away from commuting too much as we do, these will be seen only in museums, Cars on a road)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["neutral"]
+
+        
+    },
+	
+	{
+        "id": "9576",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "People in a crowded flee market searching for things to buy.",
+        "Sentence 2": "No one is around the marketplace.",
+		"Interpolation_replace": [
+			"People in the  marketplace searching for things to buy.",
+			"People are around the marketplace.",
+			"No one are around the marketplace."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, a crowded flee market, the marketplace)",
+			"(replace, searching for things to buy, are around)",
+			"(replace, People, No one)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "contradiction"]
+
+        
+    },
+	
+	{
+        "id": "9576",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "People in a crowded flee market searching for things to buy.",
+        "Sentence 2": "No one is around the marketplace.",
+		"Interpolation_replace": [
+			"People in the  marketplace searching for things to buy.",
+			"People are around the marketplace.",
+			"No one are around the marketplace."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, a crowded flee market, the marketplace)",
+			"(replace, searching for things to buy, are around)",
+			"(replace, People, No one)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "contradiction"]
+
+        
+    },
+	
+	{
+        "id": "480778",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "A worker in safety clothes is standing up on the wooded edge of the construction.",
+        "Sentence 2": "The worker is naked.",
+		"Interpolation_replace": [
+			"The naked worker is standing up on the wooded edge of the construction.",
+			"The worker is naked on the wooded edge of the construction."
+        ],
+		"Interpolation_remove": [
+			"The worker is naked."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, in safety clothes, naked)",
+			"(replace, The naked worker is standing up, The worker is naked)"
+
+        ],
+		"Changes_remove": [
+			"(remove, on the wooded edge of the construction)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "contradiction", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "331518",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "Three Caucasian children are looking out of a bared area with their mouths open.",
+        "Sentence 2": "Children are behind the bars.",
+		"Interpolation_replace": [
+			"Three Caucasian children are behind the bars with their mouths open."
+        ],
+		"Interpolation_remove": [
+			"Three children are behind the bars with their mouths open.",
+			"Three children are behind the bars."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, are looking out of a bared area, are behind the bars)"
+
+        ],
+		"Changes_remove": [
+			"(remove, Caucasian)",
+			"(remove, with their mouths open)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "278286",
+        "label": "entailment",
+        "dataset": "snli",
+        "Sentence 1": "A man in the near distance is pointing to a silver sedan near him.",
+        "Sentence 2": "A man is near a silver automobile.",
+		"Interpolation_replace": [
+			"A man in the near distance is pointing to a silver automobile near him.",
+			"A man in the near distance is near a silver automobile."
+        ],
+		"Interpolation_remove": [
+			"A man is near a silver automobile."
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, sedan, automobile)",
+			"(replace, is pointing to near him, is near)"
+
+        ],
+		"Changes_remove": [
+			"(remove, in the near distance)"
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "126208",
+        "label": "neutral",
+        "dataset": "snli",
+        "Sentence 1": "These seven dancers are wearing blue and white to match their team.",
+        "Sentence 2": "The seven dancers stood out because they were wearing their team's colors, blue and white.",
+		"Interpolation_replace": [
+			"These seven dancers are wearing their team's colors, blue and white.",
+			"These seven dancers stood out because they were wearing their team's colors, blue and white.",
+			"The seven dancers stood out because they were wearing their team's colors, blue and white."
+        ],
+		"Interpolation_remove": [
+        ],
+		"Interpolation_insert": [
+        ],
+		"Changes_replace": [
+			"(replace, blue and white to match their team, their team's colors, blue and white)",
+			"(replace, are wearing, stood out because they were wearing)",
+			"(replace, These seven dancers, The seven dancers)"
+
+        ],
+		"Changes_remove": [
+        ],
+		"Changes_insert": [
+        ],
+		
+		"Labels": ["entailment", "neutral", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "136302",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Two teammates from the USA team are jumping in the air to give high-fives while two teammates watch.",
+        "Sentence 2": "The team of athletes is sitting on the bleachers.",
+		"Interpolation_replace": [
+			"The team of athletes is jumping in the air to give high-fives while two teammates watch.",
+			"The team of athletes is sitting to give high-fives while two teammates watch."
+        ],
+		"Interpolation_remove": [
+			"The team of athletes is sitting to give high-fives.",
+			"The team of athletes is sitting."
+        ],
+		"Interpolation_insert": [
+			"The team of athletes is sitting on the bleachers."
+        ],
+		"Changes_replace": [
+			"(replace, Two teammates from the USA team, The team of athletes)",
+			"(replace, is jumping in the air, is sitting)"
+
+        ],
+		"Changes_remove": [
+			"(remove, while two teammates watch)",
+			"(remove, to give high-fives)"
+        ],
+		"Changes_insert": [
+			"(insert, on the bleachers)"
+        ],
+		
+		"Labels": ["entailment", "contradiction", "entailment", "entailment", "neutral"]
+
+        
+    },
+	
+	{
+        "id": "179512",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "Many people are on a crowded brick path walking downhill towards a distant smoking mountain.",
+        "Sentence 2": "People running.",
+		"Interpolation_replace": [
+			"Many people are on a crowded brick path running downhill towards a distant smoking mountain."
+			
+        ],
+		"Interpolation_remove": [
+			"Many people are on a crowded brick path running.",
+			"People are on a crowded brick path running.",
+			"People running."
+			
+        ],
+		"Interpolation_insert": [
+			
+        ],
+		"Changes_replace": [
+			"(replace, walking, running)"
+        ],
+		"Changes_remove": [
+			"(remove, downhill towards a distant smoking mountain)",
+			"(remove, many)",
+			"(remove, are on a crowded brick path)"
+        ],
+		"Changes_insert": [
+			
+        ],
+		
+		"Labels": ["contradiction", "entailment", "entailment", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "370267",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "A woman wearing a gray shirt and white shorts is playing golf in a golf area that is attractively landscaped with flowers.",
+        "Sentence 2": "A woman is sitting near a pool.",
+		"Interpolation_replace": [
+			"A woman wearing a gray shirt and white shorts is playing golf near a pool.",
+			"A woman wearing a gray shirt and white shorts is sitting near a pool."
+			
+        ],
+		"Interpolation_remove": [
+			"A woman is sitting near a pool."
+        ],
+		"Interpolation_insert": [
+			
+        ],
+		"Changes_replace": [
+			"(replace, in a golf area that is attractively landscaped with flowers, near a pool)",
+			"(replace, is playing golf, is sitting)"
+        ],
+		"Changes_remove": [
+			"(remove, wearing a gray shirt and white shorts)"
+        ],
+		"Changes_insert": [
+			
+        ],
+		
+		"Labels": ["contradiction", "contradiction", "entailment"]
+
+        
+    },
+	
+	{
+        "id": "259518",
+        "label": "contradiction",
+        "dataset": "snli",
+        "Sentence 1": "A man with a red bag rides his bike down a damp city street in front of a building covered in scaffolding.",
+        "Sentence 2": "A man is driving a car.",
+		"Interpolation_replace": [
+			"A man with a red bag is driving a car down a damp city street in front of a building covered in scaffolding."
+			
+        ],
+		"Interpolation_remove": [
+			"A man is driving a car down a damp city street in front of a building covered in scaffolding.",
+			"A man is driving a car down a damp city street.",
+			"A man is driving a car."
+        ],
+		"Interpolation_insert": [
+			
+        ],
+		"Changes_replace": [
+			"(replace, rides his bike, is driving a car)"
+        ],
+		"Changes_remove": [
+			"(remove, with a red bag)",
+			"(remove, in front of a building covered in scaffolding)",
+			"(remove, down a damp city street)"
+        ],
+		"Changes_insert": [
+			
+        ],
+		
+		"Labels": ["contradiction", "entailment", "entailment", "entailment"]
+
+        
+    }
+]
