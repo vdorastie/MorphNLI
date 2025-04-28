@@ -90,8 +90,7 @@ The results are presented below:
 | BART Morphism             | 82.00   | **52.78**    |
 | BART Morphism (+VN)       | 80.16   | 51.12    |
 
-The generated morphisms and predicted labels, for both SICK and MNLI (dev and test) are present in ([`inference_results/`](inference_results/))
-
+The generated morphisms and predicted labels, for both SICK and MNLI (dev and test) are present in [`inference_results/`](inference_results/).
 
 MorphNLI consistently outperforms vanilla NLI models in OOD settings, confirming that modular inference enhances generalization and domain transfer. Notable performance improvements include:
 - +1.74% on SICK (BART with VN)
@@ -107,13 +106,6 @@ MorphNLI introduces a novel modular, explainable approach to NLI by framing it a
 
 This modular step-by-step reasoning could serve as a blueprint for more resilient NLI systems.
 
-## Authors
-
-- Vlad-Andrei Negru
-- Robert Vacareanu
-- Camelia Lemnaru
-- Mihai Surdeanu
-- Rodica Potolea
 
 ## Citation
 
@@ -129,3 +121,10 @@ If you use MorphNLI, please cite:
       primaryClass={cs.CL}
 }
 ```
+## Authors
+
+- [Vlad-Andrei Negru](https://scholar.google.com/citations?user=uOSGq8wAAAAJ&hl=ro)
+- [Robert Vacareanu](https://scholar.google.com/citations?user=pq9Fo2IAAAAJ&hl=ro)
+- [Camelia Lemnaru](https://scholar.google.com/citations?user=GGOS0SAAAAAJ&hl=ro)
+- [Mihai Surdeanu](https://scholar.google.com/citations?user=a3133-8AAAAJ&hl=ro)
+- [Rodica Potolea](https://scholar.google.com/citations?user=qGcUwiUAAAAJ&hl=ro)
