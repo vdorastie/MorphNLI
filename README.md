@@ -9,7 +9,7 @@ Natural Language Inference (NLI) determines whether a text hypothesis is true, f
 
 **MorphNLI** introduces a cautious and modular strategy: decomposing the decision process into simpler, explainable steps through **text morphing**. By incrementally morphing the premise into the hypothesis, our method improves interpretability and robustness, particularly for out-of-domain (OOD) scenarios.
 
-![My Image](images/first_page_image.png)
+![First_page_image](images/first_page_image.png)
 
 ## Approach
 
@@ -54,6 +54,8 @@ Inference in MorphNLI consists of four steps:
 4. **Aggregate Inference**  
    Combine intermediate labels into a final decision using the simple heuristic explained above.
 
+![architecture](images/architecture.png)
+
 ## Experimental Results
 
 Experiments were conducted on:
@@ -63,6 +65,33 @@ Experiments were conducted on:
 Evaluation covered both:
 - **In-Domain (ID)** scenarios - where the NLI engine was fine-tuned on the same dataset as the testing dataset
 - **Out-of-Domain (OOD)** scenarios - where the NLI engine was fine-tuned on a different dataset rather than the testing dataset
+
+The results are presented below:
+
+| Model                    | SICK ID | SICK OOD |
+|---------------------------|---------|----------|
+| RoBERTa Vanilla           | 90.64   | 56.62    |
+| RoBERTa Vanilla (+VN)     | **90.91**   | 56.52    |
+| RoBERTa Morphism          | 88.14   | 57.68    |
+| RoBERTa Morphism (+VN)    | 88.32   | **57.94**    |
+|---------------------------|---------|----------|
+| BART Vanilla              | 89.85   | 59.29    |
+| BART Vanilla (+VN)        | **90.07**   | 58.64    |
+| BART Morphism             | 87.38   | 59.64    |
+| BART Morphism (+VN)       | 88.59   | **60.38**    |
+
+| Model                    | MNLI ID | MNLI OOD |
+|---------------------------|---------|----------|
+| RoBERTa Vanilla           | **89.91**   | 53.00    |
+| RoBERTa Vanilla (+VN)     | 88.50   | 52.77    |
+| RoBERTa Morphism          | 85.01   | **58.29**    |
+| RoBERTa Morphism (+VN)    | 83.32   | 56.73    |
+|---------------------------|---------|----------|
+| BART Vanilla              | **88.24**   | 46.86    |
+| BART Vanilla (+VN)        | 86.48   | 45.50    |
+| BART Morphism             | 82.00   | **52.78**    |
+| BART Morphism (+VN)       | 80.16   | 51.12    |
+
 
 MorphNLI consistently outperforms vanilla NLI models in OOD settings, confirming that modular inference enhances generalization and domain transfer. Notable performance improvements include:
 - +1.74% on SICK (BART with VN)
