@@ -74,7 +74,6 @@ The results are presented below:
 | RoBERTa Vanilla (+VN)     | **90.91**   | 56.52    |
 | RoBERTa Morphism          | 88.14   | 57.68    |
 | RoBERTa Morphism (+VN)    | 88.32   | **57.94**    |
-|---------------------------|---------|----------|
 | BART Vanilla              | 89.85   | 59.29    |
 | BART Vanilla (+VN)        | **90.07**   | 58.64    |
 | BART Morphism             | 87.38   | 59.64    |
@@ -86,11 +85,12 @@ The results are presented below:
 | RoBERTa Vanilla (+VN)     | 88.50   | 52.77    |
 | RoBERTa Morphism          | 85.01   | **58.29**    |
 | RoBERTa Morphism (+VN)    | 83.32   | 56.73    |
-|---------------------------|---------|----------|
 | BART Vanilla              | **88.24**   | 46.86    |
 | BART Vanilla (+VN)        | 86.48   | 45.50    |
 | BART Morphism             | 82.00   | **52.78**    |
 | BART Morphism (+VN)       | 80.16   | 51.12    |
+
+The generated morphisms and predicted labels, for both SICK and MNLI (dev and test) are present in ([`inference_results/`](inference_results/))
 
 
 MorphNLI consistently outperforms vanilla NLI models in OOD settings, confirming that modular inference enhances generalization and domain transfer. Notable performance improvements include:
