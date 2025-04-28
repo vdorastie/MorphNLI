@@ -9,6 +9,8 @@ Natural Language Inference (NLI) determines whether a text hypothesis is true, f
 
 **MorphNLI** introduces a cautious and modular strategy: decomposing the decision process into simpler, explainable steps through **text morphing**. By incrementally morphing the premise into the hypothesis, our method improves interpretability and robustness, particularly for out-of-domain (OOD) scenarios.
 
+![My Image](images/first_page_image.png)
+
 ## Approach
 
 MorphNLI operates through three main stages:
